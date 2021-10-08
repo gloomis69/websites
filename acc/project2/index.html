@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Div Flags</title>
+		<style>
+			body{
+				background:#e0e0e0;
+			}
+		
+			.flag {
+				background: white;
+				height: 300px;
+				width: 500px;
+				border: 1px solid black;
+				margin-bottom: 5px;
+			}
+			
+			.horz {
+				height: 33.3%;
+			}
+			
+			.vert {
+				height: 100%;
+				width: 33.3%;
+				float:left;
+			}
+			
+			.horThick{
+				height: 40%;
+			}
+			.horThin{
+				height: 20%;
+			}
+			
+			#denmark .horThick .col1{
+				float:left;
+				height: 100%;
+				width: 25%;
+			}
+			#denmark .horThick .col2{
+				float:left;
+				height: 100%;
+				width: 15%;
+			}
+			#denmark .horThick .col3{
+				float:left;
+				height: 100%;
+				width: 60%;
+			}
+			
+			#top-left{
+				width: 40%;
+				height: 55%;
+				float:left;
+			}
+			
+			#top-right{
+				
+				height: 55%;
+			}
+			
+			#bottom {
+				height:45%;
+			}
+			
+			#top-left .row1{
+				height: 40%;
+			}
+			
+			#top-left .row2{
+				height: 20%;
+			}
+			
+			#top-left .row3{
+				height: 40%;
+			}
+			
+			#top-left .row1 .col1{
+				width:40%;
+				height: 100%;
+				float: left;
+			}
+			#top-left .row1 .col2{
+				width:20%;
+				height: 100%;
+				float: left;
+			}
+			#top-left .row1 .col3{
+				width:40%;
+				height: 100%;
+				float: left;
+			}
+			
+			#top-right .row{
+				height: 20%;
+			}
+			
+			.black{background: black;}
+			.red{background: red;}
+			.gold{background: gold;}
+			.white{background: white;}
+			.blue{background: blue;}
+			.green{background: green;}
+			
+		</style>
+	</head>
+	<body>
+		<h1>Div Flags</h1>
+		<div id="germany" class="flag">
+			<div class="horz black"></div>
+			<div class="horz red"></div>
+			<div class="horz gold"></div>
+		</div>
+		
+		<div id="netherlands" class="flag">
+			<div class="horz red"></div>
+			<div class="horz white"></div>
+			<div class="horz blue"></div>
+		</div>
+		
+		<div id="france" class="flag">
+			<div class="vert blue"></div>
+			<div class="vert white"></div>
+			<div class="vert red"></div>
+		</div>
+		
+		<div id="denmark" class="flag">
+			<div class="horThick">
+				<div class="col1 red"></div>
+				<div class="col2 white"></div>
+				<div class="col3 red"></div>
+			</div>
+			<div class="horThin"></div>
+			<div class="horThick">
+				<div class="col1 red"></div>
+				<div class="col2 white"></div>
+				<div class="col3 red"></div>
+			</div>
+		</div>
+		
+		<div id="greece" class="flag">
+			<div id="top-left" class="red">
+				<div class="row1 blue">
+					<div class="col1 blue"></div>
+					<div class="col2 white"></div>
+					<div class="col3 blue"></div>
+				</div>
+				<div class="row2 white"></div>
+				<div class="row1 blue">
+					<div class="col1 blue"></div>
+					<div class="col2 white"></div>
+					<div class="col3 blue"></div>
+				</div>
+			</div>
+			<div id="top-right" class="green">
+				<div class="row blue"></div>
+				<div class="row white"></div>
+				<div class="row blue"></div>
+				<div class="row white"></div>
+				<div class="row blue"></div>
+			</div>
+			<div id="bottom" class="black"></div>
+		</div>
+	</body>
+</html>
